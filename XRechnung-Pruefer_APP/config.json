@@ -1,0 +1,8 @@
+{
+  "default_model": "claude-3-7-sonnet-latest",
+  "default_language": "en",
+  "port": 7860,
+  "max_tokens": 12800,
+  "temperature": 0.1,
+  "cache_size": 32
+}

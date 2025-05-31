@@ -1,0 +1,90 @@
+2025-05-11 02:54:50,144 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-11 02:57:57,435 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-11 02:57:57,447 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-05-11 02:57:58,236 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-11 03:04:26,336 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-11 03:04:26,348 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-05-11 03:04:26,956 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-11 03:06:43,618 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-11 03:06:43,628 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-05-11 03:06:44,298 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-11 03:07:25,415 - xml_analyzer - INFO - Starting XML analysis in en
+2025-05-11 03:07:25,416 - xml_analyzer - WARNING - XML validation warning: Unicode strings with encoding declaration are not supported. Please use bytes input or XML fragments without declaration.
+2025-05-11 03:08:28,892 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-11 03:08:28,968 - xml_analyzer - ERROR - An unexpected error occurred: 'list' object has no attribute 'strip'
+2025-05-11 03:12:03,981 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-11 03:12:03,992 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-05-11 03:12:04,654 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-11 03:12:11,604 - xml_analyzer - INFO - Starting XML analysis in en
+2025-05-11 03:12:11,605 - xml_analyzer - WARNING - XML validation warning: Unicode strings with encoding declaration are not supported. Please use bytes input or XML fragments without declaration.
+2025-05-11 03:13:13,757 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-11 03:13:13,814 - xml_analyzer - ERROR - An unexpected error occurred: 'list' object has no attribute 'strip'
+2025-05-11 03:16:33,898 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-11 03:16:33,910 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-05-11 03:16:34,727 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-11 03:17:13,949 - xml_analyzer - INFO - Starting XML analysis in en
+2025-05-11 03:17:13,950 - xml_analyzer - WARNING - XML validation warning: Unicode strings with encoding declaration are not supported. Please use bytes input or XML fragments without declaration.
+2025-05-11 03:18:16,917 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-11 03:18:16,979 - xml_analyzer - ERROR - Exception details: Traceback (most recent call last):
+  File "/Users/mmuyakwa/scripts/TEMP/Work/XRechnung-Pruefer/app.py", line 262, in analyze_and_correct_xml
+    html_output = markdown.markdown(
+                  ^^^^^^^^^^^^^^^^^^
+  File "/Users/mmuyakwa/scripts/TEMP/Work/XRechnung-Pruefer/.venv/lib/python3.12/site-packages/markdown/core.py", line 482, in markdown
+    return md.convert(text)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/mmuyakwa/scripts/TEMP/Work/XRechnung-Pruefer/.venv/lib/python3.12/site-packages/markdown/core.py", line 341, in convert
+    if not source.strip():
+           ^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'strip'
+
+2025-05-11 03:19:28,088 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-11 03:19:28,101 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-05-11 03:19:28,747 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-11 03:19:34,336 - xml_analyzer - INFO - Starting XML analysis in en
+2025-05-11 03:19:34,336 - xml_analyzer - WARNING - XML validation warning: Unicode strings with encoding declaration are not supported. Please use bytes input or XML fragments without declaration.
+2025-05-11 03:20:36,038 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-11 03:20:36,118 - xml_analyzer - ERROR - Exception details: Traceback (most recent call last):
+  File "/Users/mmuyakwa/scripts/TEMP/Work/XRechnung-Pruefer/app.py", line 262, in analyze_and_correct_xml
+    html_output = markdown.markdown(
+                  ^^^^^^^^^^^^^^^^^^
+  File "/Users/mmuyakwa/scripts/TEMP/Work/XRechnung-Pruefer/.venv/lib/python3.12/site-packages/markdown/core.py", line 482, in markdown
+    return md.convert(text)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/mmuyakwa/scripts/TEMP/Work/XRechnung-Pruefer/.venv/lib/python3.12/site-packages/markdown/core.py", line 341, in convert
+    if not source.strip():
+           ^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'strip'
+
+2025-05-11 03:21:04,067 - httpx - INFO - HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-05-11 03:21:04,078 - httpx - INFO - HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2025-05-11 03:21:04,737 - httpx - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-05-11 03:21:10,687 - xml_analyzer - INFO - Starting XML analysis in en
+2025-05-11 03:21:10,688 - xml_analyzer - WARNING - XML validation warning: Unicode strings with encoding declaration are not supported. Please use bytes input or XML fragments without declaration.
+2025-05-11 03:22:15,379 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-11 03:22:15,442 - xml_analyzer - ERROR - Exception details: Traceback (most recent call last):
+  File "/Users/mmuyakwa/scripts/TEMP/Work/XRechnung-Pruefer/app.py", line 263, in analyze_and_correct_xml
+    html_output = markdown.markdown(
+                  ^^^^^^^^^^^^^^^^^^
+  File "/Users/mmuyakwa/scripts/TEMP/Work/XRechnung-Pruefer/.venv/lib/python3.12/site-packages/markdown/core.py", line 482, in markdown
+    return md.convert(text)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/mmuyakwa/scripts/TEMP/Work/XRechnung-Pruefer/.venv/lib/python3.12/site-packages/markdown/core.py", line 341, in convert
+    if not source.strip():
+           ^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'strip'
+
+2025-05-11 03:23:00,218 - xml_analyzer - INFO - Starting XML analysis in en
+2025-05-11 03:23:00,222 - xml_analyzer - WARNING - XML Security Warning: syntax error: line 1, column 0
+2025-05-11 03:23:04,565 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-11 03:23:04,568 - xml_analyzer - ERROR - Exception details: Traceback (most recent call last):
+  File "/Users/mmuyakwa/scripts/TEMP/Work/XRechnung-Pruefer/app.py", line 263, in analyze_and_correct_xml
+    html_output = markdown.markdown(
+                  ^^^^^^^^^^^^^^^^^^
+  File "/Users/mmuyakwa/scripts/TEMP/Work/XRechnung-Pruefer/.venv/lib/python3.12/site-packages/markdown/core.py", line 482, in markdown
+    return md.convert(text)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/mmuyakwa/scripts/TEMP/Work/XRechnung-Pruefer/.venv/lib/python3.12/site-packages/markdown/core.py", line 341, in convert
+    if not source.strip():
+           ^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'strip'
+

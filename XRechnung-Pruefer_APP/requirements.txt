@@ -1,0 +1,13 @@
+pip
+python-dotenv
+wheel
+watchdog
+requests
+autopep8
+mkdocs
+gradio
+anthropic
+markdown
+lxml
+defusedxml
+xmlschema
