@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+  xrechnung-validator:
+    image: mmuyakwa/xrvalidate:3.0.2
+    build:
+      context: ./XRechnung-Validator_APP
+      dockerfile: Dockerfile
+    container_name: xrechnung-validator
+    hostname: xrechnung-validator
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    volumes:
+      - ./XRechnung-Validator_APP/xrechnung-config:/app/xrechnung-config
+    networks:
+      - xrechnung-network
+
+  xrechnung-pruefer:
+    image: mmuyakwa/xrechnung-check:3.0.2
+    build:
+      context: ./XRechnung-Pruefer_APP
+      dockerfile: Dockerfile
+    container_name: xrechnung-pruefer
+    hostname: xrechnung-pruefer
+    depends_on:
+      - xrechnung-validator
+    env_file:
+      - .env
+    ports:
+      - "7860:7860"
+    restart: unless-stopped
+    networks:
+      - xrechnung-network
+
+networks:
+  xrechnung-network:
+    driver: bridge

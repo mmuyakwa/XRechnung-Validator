@@ -1,0 +1,10 @@
+FROM openjdk:17-jdk-slim
+
+WORKDIR /app
+
+COPY validationtool-standalone.jar /app/validator.jar
+COPY xrechnung-config /app/xrechnung-config
+
+EXPOSE 8080
+
+CMD ["java", "-jar", "validator.jar", "-s", "/app/xrechnung-config/scenarios.xml", "-r", "/app/xrechnung-config", "-D"]
